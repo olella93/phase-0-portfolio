@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.about, .projects, .contact {
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #4CAF50;
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.projects h2, .contact h2 {
+    font-size: 32px;
+    color: #4CAF50;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+    text-decoration: none;
+
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+}
+
+footer p {
+    margin: 0;
+}
