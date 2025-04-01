@@ -78,11 +78,11 @@ header p {
     display: inline-block;
 }
 
-.about p {
+/* .about p {
     font-size: 20px;
     line-height: 1.6;
     color: #555;
-}
+} */
 
 .projects h2{
     font-size: 32px;
@@ -116,14 +116,28 @@ header p {
     margin-top: 0;
 }
 
-#social{
+.contact {
+    background: #1e293b;
+    color: white;
+    padding: 3rem;
+    border-radius: 12px;
+    margin: 4rem 0;
+}
+
+.contact h2 {
+    color: white;
+    margin-top: 0;
+}
+
+#social {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
     gap: 40px;
     text-decoration: none;
-
 }
+
 footer {
     background-color: #333;
     color: white;
