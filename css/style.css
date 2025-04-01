@@ -147,6 +147,7 @@ header p {
     align-items: center;
     gap: 0.5rem;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 #social a:hover {
@@ -156,10 +157,10 @@ header p {
 }
 
 footer {
-    background-color: #333;
+    background: #1e293b;
     color: white;
     text-align: center;
-    padding: 16px 0;
+    padding: 2rem;
 }
 
 footer p {
