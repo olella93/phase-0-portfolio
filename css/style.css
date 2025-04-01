@@ -134,8 +134,25 @@ header p {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
-    gap: 40px;
+    gap: 1.5rem;
     text-decoration: none;
+}
+
+#social a {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+#social a:hover {
+    background: #f59e0b;
+    color: #1e293b;
+    transform: scale(1.05);
 }
 
 footer {
