@@ -9,10 +9,11 @@ body {
 
 header {
     background: linear-gradient(135deg, #2563EB, #7C3AED);
-    background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 24px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 header h1 {
