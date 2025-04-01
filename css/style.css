@@ -16,8 +16,30 @@ header {
     overflow: hidden;
 }
 
+header::after{
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: #F8FAFC;  
+  transform: skewY(-2deg);
+  z-index: 1;
+}
+
 header h1 {
     margin: 0;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+}
+
+header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0.5rem auto 0;
 }
 
 .container {
@@ -26,22 +48,34 @@ header h1 {
     overflow: hidden;
 }
 
-.about, .projects, .contact {
-    margin-bottom: 40px;
-    text-decoration: none;
+.about {
+    position: relative;
+    z-index: 2;
+    margin-top: 2rem;
 }
 
 .about img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin-right: 20px;
-    float: left;
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: rotate(5deg);
+    transition: transform 0.3s ease;
+}
+
+.about img:hover {
+    transform: rotate(0) scale(1.05);
 }
 
 .about h2 {
-    font-size: 32px;
-    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #2563EB, #7C3AED);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
 
 .about p {
