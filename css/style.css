@@ -84,22 +84,36 @@ header p {
     color: #555;
 }
 
-.projects h2, .contact h2 {
+.projects h2{
     font-size: 32px;
-    color: #4CAF50;
+    color: #1e293b;
+    margin: 3rem 0 1.5rem;
 }
 
 .projects ul {
-    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     padding: 0;
 }
 
 .projects li {
-    background-color: #fff;
+    background: white;
+    border-radius: 12px;
     padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-top: 4px solid #f59e0b;   
+}
+
+.projects li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.projects h3 {
+    color: #2563EB;
+    margin-top: 0;
 }
 
 #social{
