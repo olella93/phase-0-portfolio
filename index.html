@@ -4,61 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard's Portfolio</title>
-
-    <link rel="stylesheet" href="./css/style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
+    <!-- Gradient Background Elements -->
+    <div class="gradient-bg"></div>
+    <div class="gradient-circle-1"></div>
+    <div class="gradient-circle-2"></div>
+
+    <!-- Floating Particles -->
+    <div id="particles-js"></div>
+
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header -->
+    <header data-aos="fade-down" data-aos-delay="100">
         <h1>Richard's Portfolio</h1>
         <p>Founder of CodeKijiji - Where code meets community</p>
     </header>
 
-    <div class="container">
-        <section class="about">
-            <img src="./img/IMG_4625.jpg" alt="Richard's Photo">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
+            <h1>Hi, I'm <span class="text-gradient">Roy Richard</span></h1>
+            <p>Building solutions that empower communities.</p>
+            <a href="#projects" class="cta-button magnetic">
+                <span class="btn-text">View My Work</span>
+            </a>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-wrapper">
+                <img src="./img/IMG_4625.jpg" alt="Richard's Photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <main class="container">
+        <section class="about" data-aos="fade-up" data-aos-delay="100">
             <h2>About Me</h2>
-            <p>Hi, I'm Richard, a passionate software developer from Nairobi, Kenya. I am the founder of CodeKijiji, a software development company based in Africa. My mission is to bridge the gap between technology and local communities by delivering world-class solutions that have a lasting impact at the grassroots level.</p>
-            <p>With my passion in building custom software solutions, I am dedicated to helping businesses and communities harness the power of technology for growth and progress.</p>
+            <!-- <p>With my passion for building custom software solutions, I am dedicated to helping businesses and communities harness the power of technology for growth and progress.</p> -->
+            <p>As the founder of CodeKijiji, a Software Development company based in Africa, my mission is to bridge the gap between technology and local communities by delivering world-class solutions that have a lasting impact at the grassroots level.</p>
+            <p>With a background in computer science and years of experience in the tech industry, I specialize in web development, mobile applications, and cloud computing. I am dedicated to continuous learning and staying updated with the latest technologies to provide the best solutions for my clients.</p>
         </section>
 
-        <section class="projects">
+        <!-- Projects Section -->
+        <section class="projects" id="projects" data-aos="zoom-in" data-aos-delay="100">
             <h2>Projects</h2>
-            <ul>
-                <li>
+            <div class="project-grid">
+                <div class="project-card">
                     <h3>CodeKijiji - Empowering Local Communities</h3>
                     <p>A software platform designed to connect local businesses with customers through an easy-to-use mobile app and website.</p>
-                </li>
-                <li>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
                     <h3>Community Health Tracker</h3>
                     <p>An application that tracks health data for local clinics, helping improve healthcare delivery in rural areas.</p>
-                </li>
-                <li>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
                     <h3>Farmers Connect</h3>
                     <p>A platform that connects farmers to resources, markets, and tools, boosting agricultural productivity in Kenya.</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <p>If you’d like to collaborate, share ideas, or simply connect, feel free to reach out. You can email me directly at <a href="royrichard@codekijiji.com">royrichard@codekijiji.com</a>, or follow me on social media:</p>
-            <div id="social">
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
             </div>
         </section>
-    </div>
 
-    <footer>
-        <p>&copy; 2025 Roy Richard | Founder of CodeKijiji</p>
+        <!-- Skills Section -->
+        <section class="skills" data-aos="fade-up" data-aos-delay="100">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" data-aos="fade-up" data-aos-delay="100">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email or social media!</p>
+            <div class="social-links">
+                <a href="https://twitter.com" target="_blank" class="social-btn magnetic">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn magnetic">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:richard@codekijiji.com" class="social-btn magnetic">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-delay="100">
+        <p>&copy; 2025 Roy Richard || Founder of CodeKijiji. All rights reserved.</p>
     </footer>
 
-    <script src="src/index.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./src/index.js"></script>
 </body>
 </html>
